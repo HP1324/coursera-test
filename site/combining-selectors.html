@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining CSS Selectors</title>
+    <style>
+        p.big{
+            color: red;
+            font-size: larger;
+        }
+        article > p{
+            font-size: 30px;
+            color: black    ;
+            background-color: rgb(133, 133, 16);
+        }
+        .article-1 > h1{
+            font-size: 28px;
+            color:yellow;
+            background-color:brown;
+        }
+
+        article > .heading-2{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <p class="big">With normal enumerations, enumerators are placed in the same scope as the enumeration itself, so you can typically access enumerators directly (e.g. red). However, with enum classes, the strong scoping rules mean that all enumerators are considered part of the enumeration, so you have to use a scope qualifier to access the enumerator (e.g. Color::red). This helps keep name pollution and the potential for name conflicts down.z</p>
+
+    <p class="big">This is second paragraph with class big.This is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class bigThis is second paragraph with class big</p>
+    
+    <div class="big">This is a div and this div also has a class names big as the p has before it.but it will not be affected by it.This is a div and this div also has a class names big as the p has before itThis is a div and this div also has a class names big as the p has before itThis is a div and this div also has a class names big as the p has before itThis is a div and this div also has a class names big as the p has before itThis is a div and this div also has a class names big as the p has before itThis is a div and this div also has a class names big as the p has before it</div>
+    
+    <article class="article-1">
+        <h1><b>This is Heading 1(Major Heading)</b></h1>
+
+        <h2 class="heading-2">
+            This is Heading 2
+        </h2>
+        <p>This is a paragraph inside article element, and this paragraph does not have any kind of class.This is a paragraph inside article element, and this paragraph does not have any kind of class.This is a paragraph inside article element, and this paragraph does not have any kind of class.This is a paragraph inside article element, and this paragraph does not have any kind of class.This is a paragraph inside article element, and this paragraph does not have any kind of class.This is a paragraph inside article element, and this paragraph does not have any kind of class.This is a paragraph inside article element, and this paragraph does not have any kind of class.</p>
+
+        <p>This is another paragraph element inside article element and this paragraph element will automaticallt be selected by our selector <code>article > p </code>.This is another paragraph element inside article element and this paragraph element will automaticallt be selected by our selector This is another paragraph element inside article element and this paragraph element will automaticallt be selected by our selector This is another paragraph element inside article element and this paragraph element will automaticallt be selected by our selector This is another paragraph element inside article element and this paragraph element will automaticallt be selected by our selector  </p>
+
+
+    </article>
+</body>
+</html>
